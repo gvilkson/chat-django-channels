@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third Apps --------------------
-    'chat'
+    'channels',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -124,5 +125,8 @@ STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+# Channels
+ASGI_APPLICATION = 'mysite.asgi.application'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
